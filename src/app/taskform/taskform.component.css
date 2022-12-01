@@ -1,0 +1,22 @@
+.task-table-sub{ 
+  margin:auto;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse:collapse;
+  }
+  
+  th {
+    background-color: rgb(242, 215, 215);
+    border: 1px solid rgb(28, 23, 23);
+  }
+  td {
+    background-color: rgb(247, 244, 241);
+    border: 1px solid #130101;
+
+  }
+  td, th {
+    text-align: center;
+    padding: 4px;
+    width: 20px;
+  }

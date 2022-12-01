@@ -1,0 +1,27 @@
+<div>
+   <button class="btn" (click)="getTask()">Hitme for the TaskDetails</button>
+</div>
+<br>
+<div>
+   <button class="bttn" (dblclick)="addUpdateTask()">Hitme for add and update  TaskDetails</button>
+</div>
+<br>
+
+<div>
+<table class="task-table-sub">
+    <tr>
+        <th *ngFor="let column of headers">
+           {{column}}
+        </th>
+    </tr> 
+  <tr *ngFor="let row of taskform">
+    <td>{{row.taskId}}</td>
+    <td>{{row.taskName}}</td>
+    <td>{{row.taskAssignedTo}}</td>
+    <td>{{row.startDate | date}}</td>
+    <td>{{row.endDate | date}}</td>
+    <td>{{row.priority}}</td>
+ </tr> 
+ </table>
+</div>
+ 
